@@ -7,7 +7,7 @@ export default function TabOneScreen() {
     <View
       style={{
         flex: 1,
-        backgroundColor: '#fff',
+        backgroundColor: '#35F0ED',
         justifyContent: 'center',
         paddingHorizontal: 20
       }}
@@ -16,7 +16,7 @@ export default function TabOneScreen() {
         flex: 1,
       }}>
         <LottieView
-          source={require('../assets/lottie/39476-login-screen.json')}
+          source={require('../assets/lottie/93385-login.json')}
           autoPlay={true}
           loop={true}
           style={{
@@ -36,9 +36,9 @@ export default function TabOneScreen() {
           <View style={{
             height: 50,
             width: '100%',
-            marginBottom: 20,
-            borderWidth: 1,
-            borderRadius: 10
+            marginBottom: 10,
+            borderWidth: 2,
+            borderRadius: 20
           }}>
 
           </View>
@@ -46,7 +46,7 @@ export default function TabOneScreen() {
 
         <View style={{
           flex: 0,
-          marginBottom: 40
+          marginBottom: 10
         }}>
           <Text>
             Password
@@ -54,12 +54,21 @@ export default function TabOneScreen() {
           <View style={{
             height: 50,
             width: '100%',
-            borderWidth: 1,
-            borderRadius: 10
+            borderWidth: 2,
+            borderRadius: 20
           }}>
 
           </View>
         </View>
+        <Text style={{
+          fontWeight: '300',
+          fontSize: 15,
+          textAlign: 'center',
+          textDecorationLine: 'underline',
+          marginBottom: 140
+        }}>
+          Didn't have an account?
+        </Text>
         <View style={{
           flex: 0,
         }}>
@@ -72,14 +81,15 @@ export default function TabOneScreen() {
               width: '100%',
               justifyContent: 'center',
               alignItems: 'center',
-              borderRadius: 10,
-              backgroundColor: '#2381EE'
+              borderRadius: 20,
+              backgroundColor: '#315CFA'
             }}>
               <Text style={{
                 fontSize: 18,
-                color: '#fff'
+                color: '#fff',
+                justifyContent: 'center'
               }}>
-                Submit
+                Log in
               </Text>
             </View>
           </View>
@@ -94,11 +104,7 @@ export default function TabOneScreen() {
         borderRadius: 10,
         paddingBottom: 20
       }}>
-        <Text style={{
-          fontSize: 18
-        }}>
-          Create an account?
-        </Text>
+
       </View>
     </View>
   );
